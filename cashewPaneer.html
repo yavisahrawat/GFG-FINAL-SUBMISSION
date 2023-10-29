@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cashew Paneer</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(160, 251, 184);
+        }
+
+        #header {
+            border-bottom-color: black;
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+        }
+
+        #header::before {
+            content: "";
+
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            height: 76%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #header h1 {
+            color: black;
+            text-align: center;
+            width: 100%;
+            font-family: 'Bree Serif', serif;
+        }
+
+        #logo {
+            margin: 4px 10px;
+        }
+
+        #logo img {
+            height: 90px;
+            margin: 7px 10px;
+            border-radius: 23px;
+        }
+
+        #search {
+            display: flex;
+            justify-content: right;
+            border-radius: 15px;
+            padding: 0.7rem;
+            width: auto;
+        }
+
+        #bar {
+            padding: 0.7rem;
+            border-radius: 15px;
+            width: 100%;
+        }
+
+        hr {
+            color: black;
+        }
+
+        #img {
+            display: flex;
+            justify-content: center;
+        }
+
+        #img .image {
+            height: 500px;
+            margin: 7px 10px;
+            border-radius: 25px;
+        }
+
+        #ingredients {
+            display: flex;
+        }
+
+        #ingredients .ingredient {
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .ingredient ul li {
+            font-size: 24px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .ingredient ul p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #instructions{
+            display: flex;
+        }
+
+        #instructions .steps{
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .steps ul li{
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            list-style: number;
+        }
+
+        .h-primary {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 4rem;
+            padding: 12px;
+        }
+
+        .h-secondary {
+            font-family: 'Bree Serif', serif;
+            font-size: 1.5rem;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="header">
+        <div id="logo">
+            <a href="LetThemCook.html">
+                <img src="logo.jpg" alt="LetThemCook">
+            </a>
+        </div>
+        <h1 class="h-primary center">Cashew Paneer</h1>
+        <div id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="search" id="bar" placeholder="Search your recipe">
+        </div>
+    </nav>
+    <hr>
+    <div id="img">
+        <img class="image" src="veg3.jpg" alt="homemade-tiramisu-2">
+    </div>
+    <section id="ingredients">
+        <div class="ingredient">
+            <h2 class="h-secondary">Ingredients</h2>
+            <ul>
+                <li>
+                    200 grams paneer, cubed
+                </li>
+                <li>
+                    1 cup cashews, soaked in water for at least 2 hours
+                </li>
+                <li>
+                    2 onions, finely chopped
+                </li>
+                <li>
+                    2 tomatoes, finely chopped
+                </li>
+                <li>
+                    1 tablespoon ginger-garlic paste
+                </li>
+                <li>
+                    1 teaspoon cumin seeds
+                </li>
+                <li>
+                    1 teaspoon red chili powder
+                </li>
+                <li>
+                    1 teaspoon garam masala
+                </li>
+                <li>1 teaspoon turmeric powder
+                </li>
+                <li>1 teaspoon coriander powder
+                </li>
+                <li>1/2 cup heavy cream
+                </li>
+                <li>Salt to taste
+                </li>
+                <li>Fresh coriander leaves for garnishing
+                </li>
+                <li>2 tablespoons cooking oil
+                </li>
+            </ul>
+            <div class="ingredient">
+                <h2 class="h-secondary">Estimated cost</h2>
+                <ul>
+                    <p>
+                        "IF YOU HAVE ALL THESE INGREDIENTS THEN YOU HAVE NO IMPENDING CURSE
+                        OF HAVING TO SPEND YOUR MONEY :0, ELSE YOU HAVE TO SPEND : ["
+                    </p>
+                    <li>
+                        The Estimated Budget would be :- 200-350 rupees
+                    </li>
+                </ul>
+            </div>
+    </section>
+
+    <section id="instructions">
+        <div class="steps">
+            <h2 class="h-secondary">Instructions to follow</h2>
+            <ul>
+                <li> Grind the soaked cashews into a smooth paste using a blender or food processor. Set aside.
+                </li>
+                <li> Heat oil in a pan over medium heat. Add cumin seeds and let them splutter.
+                </li>
+                <li> Add the finely chopped onions and sauté until they turn golden brown.
+                </li>
+                <li> Add ginger-garlic paste and sauté for a minute or until the raw smell disappears.
+                </li>
+                <li> Add the chopped tomatoes and cook until they turn mushy and the oil starts to separate.
+                </li>
+                <li>Add red chili powder, turmeric powder, and coriander powder. Mix well and cook for a couple of minutes.
+                </li>
+                <li>Add the cashew paste and mix thoroughly, letting it cook for a few minutes.
+                </li>
+                <li>Add the cubed paneer and gently mix it with the cashew gravy, ensuring the paneer is well coated.
+                </li>
+                <li>Pour in the heavy cream and stir gently to incorporate.
+                </li>
+                <li>Add garam masala and salt according to your taste. Stir and let it cook for a few more minutes.
+                </li>
+                <li> Once the paneer is cooked and the gravy reaches your desired consistency, turn off the heat.
+                </li>
+                <li>Garnish with fresh coriander leaves and serve hot with naan, roti, or rice.</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

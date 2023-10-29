@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirimasu</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: wheat;
+        }
+
+        #header {
+            border-bottom-color: black;
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+        }
+
+        #header::before {
+            content: "";
+
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            height: 76%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #header h1 {
+            color: black;
+            text-align: center;
+            width: 100%;
+            font-family: 'Bree Serif', serif;
+        }
+
+        #logo {
+            margin: 4px 10px;
+        }
+
+        #logo img {
+            height: 90px;
+            margin: 7px 10px;
+            border-radius: 23px;
+        }
+
+        #search {
+            display: flex;
+            justify-content: right;
+            border-radius: 15px;
+            padding: 0.7rem;
+            width: auto;
+        }
+
+        #bar {
+            padding: 0.7rem;
+            border-radius: 15px;
+            width: 100%;
+        }
+
+        hr {
+            color: black;
+        }
+
+        #img {
+            display: flex;
+            justify-content: center;
+        }
+
+        #img .image {
+            height: 500px;
+            margin: 7px 10px;
+            border-radius: 25px;
+        }
+
+        #ingredients {
+            display: flex;
+        }
+
+        #ingredients .ingredient {
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .ingredient ul li {
+            font-size: 24px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .ingredient ul p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #instructions{
+            display: flex;
+        }
+
+        #instructions .steps{
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .steps ul li{
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            list-style: number;
+        }
+
+        .h-primary {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 4rem;
+            padding: 12px;
+        }
+
+        .h-secondary {
+            font-family: 'Bree Serif', serif;
+            font-size: 1.5rem;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="header">
+        <div id="logo">
+            <a href="LetThemCook.html">
+                <img src="logo.jpg" alt="LetThemCook">
+            </a>
+        </div>
+        <h1 class="h-primary center">Tiramisu</h1>
+        <div id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="search" id="bar" placeholder="Search your recipe">
+        </div>
+    </nav>
+    <hr>
+    <div id="img">
+        <img class="image" src="dessert1.jpg" alt="homemade-tiramisu-2">
+    </div>
+    <section id="ingredients">
+        <div class="ingredient">
+            <h2 class="h-secondary">Ingredients</h2>
+            <ul>
+                <li>
+                    6 large egg yolks.
+                </li>
+                <li>
+                    3/4 granulated sugar.
+                </li>
+                <li>
+                    2/3 cup mascarpone cheese.
+                </li>
+                <li>
+                    1 cup heavy cream.
+                </li>
+                <li>
+                    1+1/2 strong brewed cup of coffee.
+                </li>
+                <li>
+                    2 tablespoons coffee liquor.
+                </li>
+                <li>
+                    24 to 30 breadsticks.
+                </li>
+                <li>
+                    Unsweetened cocoa powder.
+                </li>
+            </ul>
+            <div class="ingredient">
+                <h2 class="h-secondary">Estimated cost</h2>
+                <ul>
+                    <p>
+                        "IF YOU HAVE ALL THESE INGREDIENTS THEN YOU HAVE NO IMPENDING CURSE
+                        OF HAVING TO SPEND YOUR MONEY :0, ELSE YOU HAVE TO SPEND : ["
+                    </p>
+                    <li>
+                        The Estimated Budget would be :- 200-350 rupees
+                    </li>
+                </ul>
+            </div>
+    </section>
+
+    <section id="instructions">
+        <div class="steps">
+            <h2 class="h-secondary">Instructions to follow</h2>
+            <ul>
+                <li>In a large mixing bowl, using a hand mixer or stand mixer, beatthe egg yolks and sugar together until the mixture is thick and pale yellow. </li>
+                <li>Add the mascarpone cheese to the egg yolk mixture and beat
+                    until smooth.</li>
+                <li>In a separate bowl, whip the heavy cream until stiff peaks
+                    form.</li>
+                <li>Gently fold the whipped cream into the mascarpone mixture until
+                    well combined. Set the mixture aside.</li>
+                <li>In a shallow dish, combine the cooled coffee and coffee
+                    liqueur, if using.</li>
+                <li>Quickly dip each ladyfinger into the coffee mixture, ensuring
+                    they are soaked but not overly saturated. Arrange a layer of dipped
+                    ladyfingers in the bottom of a 9x13 inch (23x33 cm) dish or a
+                    similar-sized serving dish.</li>
+                <li>Spread half of the mascarpone mixture
+                    evenly over the breadsticks.</li>
+                <li>Create another layer of dipped ladyfingers on top of the
+                    mascarpone layer, followed by the remaining mascarpone mixture on
+                    top.</li>
+                <li>Cover the dish with plastic wrap and refrigerate for at least
+                    hours or preferably overnight to allow the flavors to meld and the
+                    dessert to set.</li>
+                <li>Before serving, dust the top with a generous amount of
+                    unsweetened cocoa powder using a fine-mesh sieve.</li>
+                <li>Slice and serve chilled.</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

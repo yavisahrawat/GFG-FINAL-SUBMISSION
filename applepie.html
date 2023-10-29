@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Pie</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: wheat;
+        }
+
+        #header {
+            border-bottom-color: black;
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+        }
+
+        #header::before {
+            content: "";
+
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            height: 76%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #header h1 {
+            color: black;
+            text-align: center;
+            width: 100%;
+            font-family: 'Bree Serif', serif;
+        }
+
+        #logo {
+            margin: 4px 10px;
+        }
+
+        #logo img {
+            height: 90px;
+            margin: 7px 10px;
+            border-radius: 23px;
+        }
+
+        #search {
+            display: flex;
+            justify-content: right;
+            border-radius: 15px;
+            padding: 0.7rem;
+            width: auto;
+        }
+
+        #bar {
+            padding: 0.7rem;
+            border-radius: 15px;
+            width: 100%;
+        }
+
+        hr {
+            color: black;
+        }
+
+        #img {
+            display: flex;
+            justify-content: center;
+        }
+
+        #img .image {
+            height: 500px;
+            margin: 7px 10px;
+            border-radius: 25px;
+        }
+
+        #ingredients {
+            display: flex;
+        }
+
+        #ingredients .ingredient {
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .ingredient ul li {
+            font-size: 24px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .ingredient ul p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #instructions{
+            display: flex;
+        }
+
+        #instructions .steps{
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .steps ul li{
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            list-style: number;
+        }
+
+        .h-primary {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 4rem;
+            padding: 12px;
+        }
+
+        .h-secondary {
+            font-family: 'Bree Serif', serif;
+            font-size: 1.5rem;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="header">
+        <div id="logo">
+            <a href="LetThemCook.html">
+                <img src="logo.jpg" alt="LetThemCook">
+            </a>
+        </div>
+        <h1 class="h-primary center">Apple Pie</h1>
+        <div id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="search" id="bar" placeholder="Search your recipe">
+        </div>
+    </nav>
+    <hr>
+    <div id="img">
+        <img class="image" src="dessert4.jpg" alt="homemade-tiramisu-2">
+    </div>
+    <section id="ingredients">
+        <div class="ingredient">
+            <h2 class="h-secondary">Ingredients for the Pie Crust</h2>
+            <ul>
+                <li>
+                    2 1/2 cups all-purpose flour
+                </li>
+                <li>
+                    1 cup unsalted butter, chilled and cut into small pieces
+                </li>
+                <li>
+                    1 teaspoon salt
+                </li>
+                <li>
+                    1 teaspoon sugar
+                </li>
+            </ul>
+            <h2 class="h-secondary">Ingredients for the Apple Filling</h2>
+            <ul>
+                <li>
+                    6 cups thinly sliced, peeled apples (a mix of tart and sweet varieties like Granny Smith and Honey crisp works well)
+                </li>
+                <li>
+                    3/4 cup granulated sugar
+                </li>
+                <li>
+                    2 tablespoons all-purpose flour
+                </li>
+                <li>
+                    1 teaspoon ground cinnamon
+                </li>
+                <li>1/4 teaspoon ground nutmeg
+                </li>
+                <li>1 tablespoon lemon juice
+                </li>
+                <li>1 tablespoon unsalted butter, cut into small pieces
+                </li>
+            </ul>
+            <div class="ingredient">
+                <h2 class="h-secondary">Estimated cost</h2>
+                <ul>
+                    <p>
+                        "IF YOU HAVE ALL THESE INGREDIENTS THEN YOU HAVE NO IMPENDING CURSE
+                        OF HAVING TO SPEND YOUR MONEY :0, ELSE YOU HAVE TO SPEND : ["
+                    </p>
+                    <li>
+                        The Estimated Budget would be :- 200-350 rupees
+                    </li>
+                </ul>
+            </div>
+    </section>
+
+    <section id="instructions">
+        <div class="steps">
+            <h2 class="h-secondary">Instructions to follow</h2>
+            <ul>
+                <li>To make the pie crust, mix the flour, salt, and sugar in a large bowl. Add the chilled butter pieces and blend with a pastry cutter or fork until the mixture resembles    coarse crumbs.
+                </li>
+                <li>Gradually add the ice water, a little at a time, and mix until the dough comes together. Divide the dough in half, shape into discs, and wrap each in plastic wrap.
+                </li>
+                <li>
+                    Refrigerate for at least 1 hour.
+                </li>
+                <li>Preheat the oven to 425°F (220°C).
+                </li>
+                <li>On a floured surface, roll out one disc of dough to fit a 9-inch pie dish. Place the rolled-out dough into the pie dish and trim the edges.
+                </li>
+                <li> In a large bowl, combine the sliced apples, sugar, flour, cinnamon, nutmeg, and lemon juice. Toss until the apples are evenly coated.
+                </li>
+                <li>Pour the apple mixture into the prepared pie crust. Dot the top of the apples with small pieces of butter.
+                </li>
+                <li>Roll out the second disc of dough and place it over the apples. Trim any excess dough and crimp the edges to seal the pie.
+                </li>
+                <li>Make a few slits in the top crust to allow steam to escape during baking.
+                </li>
+                <li>Optionally, brush the top crust with an egg wash (1 beaten egg mixed with a tablespoon of water) for a golden finish.
+                </li>
+                <li>Place the pie on a baking sheet to catch any drips and bake for 45 to 50 minutes, or until the crust is golden brown and the filling is bubbly.
+                </li>
+                <li> Allow the pie to cool before serving. Serve with a scoop of vanilla ice cream or a dollop of whipped cream if desired.</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chilli Prawn</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(255, 171, 171);
+        }
+
+        #header {
+            border-bottom-color: black;
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+        }
+
+        #header::before {
+            content: "";
+
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            height: 76%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #header h1 {
+            color: black;
+            text-align: center;
+            width: 100%;
+            font-family: 'Bree Serif', serif;
+        }
+
+        #logo {
+            margin: 4px 10px;
+        }
+
+        #logo img {
+            height: 90px;
+            margin: 7px 10px;
+            border-radius: 23px;
+        }
+
+        #search {
+            display: flex;
+            justify-content: right;
+            border-radius: 15px;
+            padding: 0.7rem;
+            width: auto;
+        }
+
+        #bar {
+            padding: 0.7rem;
+            border-radius: 15px;
+            width: 100%;
+        }
+
+        hr {
+            color: black;
+        }
+
+        #img {
+            display: flex;
+            justify-content: center;
+        }
+
+        #img .image {
+            height: 500px;
+            margin: 7px 10px;
+            border-radius: 25px;
+        }
+
+        #ingredients {
+            display: flex;
+        }
+
+        #ingredients .ingredient {
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .ingredient ul li {
+            font-size: 24px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .ingredient ul p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #instructions{
+            display: flex;
+        }
+
+        #instructions .steps{
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .steps ul li{
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            list-style: number;
+        }
+
+        .steps ul p{
+            font-size: 1.5rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .h-primary {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 4rem;
+            padding: 12px;
+        }
+
+        .h-secondary {
+            font-family: 'Bree Serif', serif;
+            font-size: 1.5rem;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="header">
+        <div id="logo">
+            <a href="LetThemCook.html">
+                <img src="logo.jpg" alt="LetThemCook">
+            </a>
+        </div>
+        <h1 class="h-primary center">Chilli Prawn</h1>
+        <div id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="search" id="bar" placeholder="Search your recipe">
+        </div>
+    </nav>
+    <hr>
+    <div id="img">
+        <img class="image" src="nonveg4.jpg" alt="homemade-tiramisu-2">
+    </div>
+    <section id="ingredients">
+        <div class="ingredient">
+            <h2 class="h-secondary">Ingredients</h2>
+            <ul>
+                <li>
+                    1 pound (450g) large prawns, cleaned and deveined
+                </li>
+                <li>
+                    2 tablespoons cornstarch
+                </li>
+                <li>
+                    1 teaspoon salt
+                </li>
+                <li>
+                    1/2 teaspoon black pepper
+                </li>
+                <li>
+                    2 tablespoons cooking oil
+                </li>
+                <li>
+                    4 cloves garlic, minced
+                </li>
+                <li>
+                    1 inch ginger, minced
+                </li>
+                <li>
+                    1 onion, thinly sliced              
+                </li>
+                <li>1 bell pepper (any color), thinly sliced
+                </li>
+                <li>2-3 fresh red chilies, thinly sliced
+                </li>
+                <li>2 tablespoons soy sauce
+                </li>
+                <li>1 tablespoon tomato ketchup
+                </li>
+                <li>1 tablespoon sweet chili sauce
+                </li>
+                <li>1 tablespoon rice vinegar
+                </li>
+                <li>1 teaspoon sugar
+                </li>
+                <li>1/2 cup chicken or vegetable broth
+                </li>
+                <li>Fresh cilantro or green onions for garnish
+                </li>
+            </ul>
+            <div class="ingredient">
+                <h2 class="h-secondary">Estimated cost</h2>
+                <ul>
+                    <p>
+                        "IF YOU HAVE ALL THESE INGREDIENTS THEN YOU HAVE NO IMPENDING CURSE
+                        OF HAVING TO SPEND YOUR MONEY :0, ELSE YOU HAVE TO SPEND : ["
+                    </p>
+                    <li>
+                        The Estimated Budget would be :- 200-350 rupees
+                    </li>
+                </ul>
+            </div>
+    </section>
+
+    <section id="instructions">
+        <div class="steps">
+            <h2 class="h-secondary">Instructions to follow</h2>
+            <ul>
+                <li>In a bowl, toss the prawns with cornstarch, salt, and black pepper until well coated.
+                </li>
+                <li>Heat the cooking oil in a large pan or wok over medium-high heat. Add the prawns and cook for 2-3 minutes on each side until they turn pink and opaque. Remove the    prawns from the pan and set aside.
+                </li>
+                <li>In the same pan, add a little more oil if needed. Sauté the minced garlic and ginger until fragrant, about 1 minute.
+                </li>
+                <li>Add the sliced onion, bell pepper, and red chilies. Stir-fry for 2-3 minutes until the vegetables are slightly softened.
+                </li>
+                <li>In a small bowl, mix together soy sauce, tomato ketchup, sweet chili sauce, rice vinegar, sugar, and chicken or vegetable broth.
+                </li>
+                <li>Pour the sauce mixture into the pan with the vegetables and bring to a simmer.
+                </li>
+                <li>Add the cooked prawns back into the pan and toss everything together until the prawns are coated with the sauce.
+                </li>
+                <li>Cook for an additional 1-2 minutes until the prawns are heated through and the sauce has thickened slightly.
+                </li>
+                <li>Garnish with fresh cilantro or green onions.
+                </li>
+                <li>Serve the delicious chili prawns hot with steamed rice or noodles for a delightful and flavorful meal! Adjust the amount of red chilies according to your spice preference.
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
