@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mushroom Fried Rice</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(160, 251, 184);
+        }
+
+        #header {
+            border-bottom-color: black;
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+        }
+
+        #header::before {
+            content: "";
+
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            height: 76%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #header h1 {
+            color: black;
+            text-align: center;
+            width: 100%;
+            font-family: 'Bree Serif', serif;
+        }
+
+        #logo {
+            margin: 4px 10px;
+        }
+
+        #logo img {
+            height: 90px;
+            margin: 7px 10px;
+            border-radius: 23px;
+        }
+
+        #search {
+            display: flex;
+            justify-content: right;
+            border-radius: 15px;
+            padding: 0.7rem;
+            width: auto;
+        }
+
+        #bar {
+            padding: 0.7rem;
+            border-radius: 15px;
+            width: 100%;
+        }
+
+        hr {
+            color: black;
+        }
+
+        #img {
+            display: flex;
+            justify-content: center;
+        }
+
+        #img .image {
+            height: 500px;
+            margin: 7px 10px;
+            border-radius: 25px;
+        }
+
+        #ingredients {
+            display: flex;
+        }
+
+        #ingredients .ingredient {
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .ingredient ul li {
+            font-size: 24px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .ingredient ul p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #instructions{
+            display: flex;
+        }
+
+        #instructions .steps{
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .steps ul li{
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            list-style: number;
+        }
+
+        .h-primary {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 4rem;
+            padding: 12px;
+        }
+
+        .h-secondary {
+            font-family: 'Bree Serif', serif;
+            font-size: 1.5rem;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="header">
+        <div id="logo">
+            <a href="LetThemCook.html">
+                <img src="logo.jpg" alt="LetThemCook">
+            </a>
+        </div>
+        <h1 class="h-primary center">Mushroom Fried Rice</h1>
+        <div id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="search" id="bar" placeholder="Search your recipe">
+        </div>
+    </nav>
+    <hr>
+    <div id="img">
+        <img class="image" src="veg1.jpg" alt="homemade-tiramisu-2">
+    </div>
+    <section id="ingredients">
+        <div class="ingredient">
+            <h2 class="h-secondary">Ingredients</h2>
+            <ul>
+                <li>
+                    2 cups cooked long-grain white rice, preferably cooled or day-old rice
+                </li>
+                <li>
+                    8 ounces (225g) mushrooms, sliced
+                </li>
+                <li>
+                    2 tablespoons vegetable oil
+                </li>
+                <li>
+                    2 cloves garlic, minced
+                </li>
+                <li>
+                    1 small onion, finely chopped
+                </li>
+                <li>
+                    1 small carrot, diced
+                </li>
+                <li>
+                    1/2 cup frozen peas, thawed
+                </li>
+                <li>
+                    2 tablespoons soy sauce
+                </li>
+                <li>
+                    1 tablespoon oyster sauce (optional)
+                    
+                    
+                </li>
+                <li>2 eggs, lightly beaten
+
+
+                </li>
+                <li>Salt and pepper to taste
+
+
+                </li>
+                <li>Green onions, chopped, for garnish
+
+
+                </li>
+            </ul>
+            <div class="ingredient">
+                <h2 class="h-secondary">Estimated cost</h2>
+                <ul>
+                    <p>
+                        "IF YOU HAVE ALL THESE INGREDIENTS THEN YOU HAVE NO IMPENDING CURSE
+                        OF HAVING TO SPEND YOUR MONEY :0, ELSE YOU HAVE TO SPEND : ["
+                    </p>
+                    <li>
+                        The Estimated Budget would be :- 200-350 rupees
+                    </li>
+                </ul>
+            </div>
+    </section>
+
+    <section id="instructions">
+        <div class="steps">
+            <h2 class="h-secondary">Instructions to follow</h2>
+            <ul>
+                <li>Heat a large skillet or wok over medium-high heat and add one tablespoon of vegetable oil. Add the beaten eggs and scramble them until they're fully cooked. Remove the    eggs from the skillet and set them aside.
+
+
+                </li>
+                <li> In the same skillet, add another tablespoon of oil and sauté the garlic and onions until they are fragrant and translucent.
+
+
+                </li>
+                <li> Add the sliced mushrooms and cook until they are tender and any liquid released has evaporated.
+
+
+                </li>
+                <li>Stir in the diced carrots and cook for a few minutes until they begin to soften.
+
+
+                </li>
+                <li> Add the cooked rice to the skillet and stir-fry everything together, breaking up any clumps of rice.
+
+
+                </li>
+                <li>Pour the soy sauce and oyster sauce (if using) over the rice and mix well to evenly distribute the sauces.
+
+
+                </li>
+                <li>Add the peas and the scrambled eggs to the skillet and continue to stir-fry until everything is heated through.
+
+                </li>
+                <li>Season with salt and pepper to taste.
+
+
+                </li>
+                <li>Garnish with chopped green onions before serving.
+
+
+                </li>
+                <li>Mushroom fried rice makes for a flavorful and satisfying meal on its own, or it can be served as a side dish alongside other main courses. Adjust the seasonings and ingredients according to your taste preferences. Enjoy!
+
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gajar ka Halwa</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: wheat;
+        }
+
+        #header {
+            border-bottom-color: black;
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+        }
+
+        #header::before {
+            content: "";
+
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            height: 76%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #header h1 {
+            color: black;
+            text-align: center;
+            width: 100%;
+            font-family: 'Bree Serif', serif;
+        }
+
+        #logo {
+            margin: 4px 10px;
+        }
+
+        #logo img {
+            height: 90px;
+            margin: 7px 10px;
+            border-radius: 23px;
+        }
+
+        #search {
+            display: flex;
+            justify-content: right;
+            border-radius: 15px;
+            padding: 0.7rem;
+            width: auto;
+        }
+
+        #bar {
+            padding: 0.7rem;
+            border-radius: 15px;
+            width: 100%;
+        }
+
+        hr {
+            color: black;
+        }
+
+        #img {
+            display: flex;
+            justify-content: center;
+        }
+
+        #img .image {
+            height: 500px;
+            margin: 7px 10px;
+            border-radius: 25px;
+        }
+
+        #ingredients {
+            display: flex;
+        }
+
+        #ingredients .ingredient {
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .ingredient ul li {
+            font-size: 24px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .ingredient ul p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #instructions{
+            display: flex;
+        }
+
+        #instructions .steps{
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .steps ul li{
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            list-style: number;
+        }
+
+        .h-primary {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 4rem;
+            padding: 12px;
+        }
+
+        .h-secondary {
+            font-family: 'Bree Serif', serif;
+            font-size: 1.5rem;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="header">
+        <div id="logo">
+            <a href="LetThemCook.html">
+                <img src="logo.jpg" alt="LetThemCook">
+            </a>
+        </div>
+        <h1 class="h-primary center">Gajar Ka Halwa</h1>
+        <div id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="search" id="bar" placeholder="Search your recipe">
+        </div>
+    </nav>
+    <hr>
+    <div id="img">
+        <img class="image" src="dessert3.jpg" alt="homemade-tiramisu-2">
+    </div>
+    <section id="ingredients">
+        <div class="ingredient">
+            <h2 class="h-secondary">Ingredients</h2>
+            <ul>
+                <li>
+                    4 cups grated carrots
+                </li>
+                <li>
+                    3 cups whole milk
+                </li>
+                <li>
+                    1/2 cup sugar (adjust according to your taste)
+                </li>
+                <li>
+                    4 tablespoons ghee (clarified butter)
+                </li>
+                <li>
+                    1+1/2 strong brewed cup of coffee.
+                </li>
+                <li>
+                    1/4 cup mixed nuts (almonds, cashews, and raisins), chopped
+                </li>
+                <li>
+                    1/2 teaspoon cardamom powder
+                </li>
+                <li>
+                    A pinch of saffron strands (optional)
+                </li>
+                <li>
+                    A handful of chopped pistachios for garnishing
+                </li>
+            </ul>
+            <div class="ingredient">
+                <h2 class="h-secondary">Estimated cost</h2>
+                <ul>
+                    <p>
+                        "IF YOU HAVE ALL THESE INGREDIENTS THEN YOU HAVE NO IMPENDING CURSE
+                        OF HAVING TO SPEND YOUR MONEY :0, ELSE YOU HAVE TO SPEND : ["
+                    </p>
+                    <li>
+                        The Estimated Budget would be :- 200-350 rupees
+                    </li>
+                </ul>
+            </div>
+    </section>
+
+    <section id="instructions">
+        <div class="steps">
+            <h2 class="h-secondary">Instructions to follow</h2>
+            <ul>
+                <li>Heat ghee in a heavy-bottomed pan or a non-stick pan on medium heat.
+                </li>
+                <li> Add the grated carrots and sauté for 5-7 minutes until they turn soft and the raw smell disappears.
+                </li>
+                <li>Pour in the milk and let the carrots cook in the milk. Stir occasionally to prevent the milk from sticking to the bottom of the pan.
+                </li>
+                <li>Cook the carrots in the milk until the milk reduces and thickens, and the carrots become soft and cooked. This might take around 20-25 minutes.
+                </li>
+                <li>Add sugar, chopped nuts, cardamom powder, and saffron strands (if using). Mix well and cook for another 5-10 minutes until the mixture thickens further and attains a    halwa-like consistency.
+                </li>
+                <li> Keep stirring intermittently to avoid sticking and to ensure even cooking.
+                </li>
+                <li> Once the mixture reaches a thick consistency and the ghee starts to separate from the mixture, turn off the heat.
+                </li>
+                <li> Garnish with chopped pistachios.
+                </li>
+                <li>Serve the gajar ka halwa warm or chilled, according to your preference.</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

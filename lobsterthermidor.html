@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobster Thermidor</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(255, 171, 171);
+        }
+
+        #header {
+            border-bottom-color: black;
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+        }
+
+        #header::before {
+            content: "";
+
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            height: 76%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #header h1 {
+            color: black;
+            text-align: center;
+            width: 100%;
+            font-family: 'Bree Serif', serif;
+        }
+
+        #logo {
+            margin: 4px 10px;
+        }
+
+        #logo img {
+            height: 90px;
+            margin: 7px 10px;
+            border-radius: 23px;
+        }
+
+        #search {
+            display: flex;
+            justify-content: right;
+            border-radius: 15px;
+            padding: 0.7rem;
+            width: auto;
+        }
+
+        #bar {
+            padding: 0.7rem;
+            border-radius: 15px;
+            width: 100%;
+        }
+
+        hr {
+            color: black;
+        }
+
+        #img {
+            display: flex;
+            justify-content: center;
+        }
+
+        #img .image {
+            height: 500px;
+            margin: 7px 10px;
+            border-radius: 25px;
+        }
+
+        #ingredients {
+            display: flex;
+        }
+
+        #ingredients .ingredient {
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .ingredient ul li {
+            font-size: 24px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .ingredient ul p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #instructions{
+            display: flex;
+        }
+
+        #instructions .steps{
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .steps ul li{
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            list-style: number;
+        }
+
+        .steps ul p{
+            font-size: 1.5rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .h-primary {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 4rem;
+            padding: 12px;
+        }
+
+        .h-secondary {
+            font-family: 'Bree Serif', serif;
+            font-size: 1.5rem;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="header">
+        <div id="logo">
+            <a href="LetThemCook.html">
+                <img src="logo.jpg" alt="LetThemCook">
+            </a>
+        </div>
+        <h1 class="h-primary center">Lobster Thermidor</h1>
+        <div id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="search" id="bar" placeholder="Search your recipe">
+        </div>
+    </nav>
+    <hr>
+    <div id="img">
+        <img class="image" src="nonveg1.jpg" alt="homemade-tiramisu-2">
+    </div>
+    <section id="ingredients">
+        <div class="ingredient">
+            <h2 class="h-secondary">Ingredients</h2>
+            <ul>
+                <li>
+                    2 cooked lobsters, meat removed from the shells and chopped
+                </li>
+                <li>
+                    4 tablespoons butter
+
+                </li>
+                <li>
+                    1/4 cup all-purpose flour
+                </li>
+                <li>
+                    1 1/2 cups whole milk
+                </li>
+                <li>
+                    1/2 cup grated Gruyere cheese
+                </li>
+                <li>
+                    1/4 cup grated Parmesan cheese
+
+                </li>
+                <li>
+                    1/4 cup dry white wine
+
+                </li>
+                <li>
+                    2 tablespoons Dijon mustard
+                </li>
+                <li>1/4 cup fresh parsley, chopped
+
+
+                </li>
+                <li>Salt and freshly ground black pepper, to taste
+
+
+                </li>
+                <li>1/2 cup fresh breadcrumbs
+
+
+                </li>
+            </ul>
+            <div class="ingredient">
+                <h2 class="h-secondary">Estimated cost</h2>
+                <ul>
+                    <p>
+                        "IF YOU HAVE ALL THESE INGREDIENTS THEN YOU HAVE NO IMPENDING CURSE
+                        OF HAVING TO SPEND YOUR MONEY :0, ELSE YOU HAVE TO SPEND : ["
+                    </p>
+                    <li>
+                        The Estimated Budget would be :- 200-350 rupees
+                    </li>
+                </ul>
+            </div>
+    </section>
+
+    <section id="instructions">
+        <div class="steps">
+            <h2 class="h-secondary">Instructions to follow</h2>
+            <ul>
+                <li>In a saucepan, melt the butter over medium heat. Stir in the flour and cook for a few minutes.
+
+
+                </li>
+                <li> Gradually whisk in the milk and cook until the sauce thickens.
+
+
+                </li>
+                <li>Add the Gruyere and Parmesan cheeses, white wine, Dijon mustard, and parsley. Stir until the cheese is melted and the sauce is smooth.
+
+                </li>
+                <li>Season with salt and pepper to taste.
+
+
+                </li>
+                <li>Stir in the chopped lobster meat, making sure it is well-coated with the sauce.
+
+
+                </li>
+                <li>Spoon the mixture back into the lobster shells or into a baking dish.
+
+
+                </li>
+                <li>Sprinkle the top with fresh breadcrumbs.
+
+
+                </li>
+                <li>Broil for a few minutes until the breadcrumbs are golden and the sauce is bubbly.
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

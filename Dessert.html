@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<style>
+    #navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#logo{
+    margin: 4px 10px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 7px 10px;
+    border-radius: 24px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+#search{
+    display: flex;
+    justify-content: right;
+    border-radius: 15px;
+    padding: 0.7rem;
+    width: 60%;
+}
+
+#bar{
+    padding: 0.7rem;
+    border-radius: 15px;
+    width: 40%;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 292px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('home3.jpg') no-repeat center center/cover;
+    height: 552px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Bree serif', serif;
+}
+
+#about{
+    height: 500px;
+    width: 100%;
+}
+
+#about h1{
+    margin-top: 162px;
+    margin-bottom: 50px;
+}
+
+#categories{
+    margin: 34px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#categories > *{
+    width: calc(100/3);
+}
+#categories .box{
+    border: 2px solid black;
+    border-radius: 28px;
+    padding: 34px;
+    margin: 2px 21px;
+    background-color: antiquewhite;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#categories .box img{
+    height: 300px;
+    margin: 10px 40px;
+    display: block;
+    border-radius: 8px;
+}
+
+#btn1{
+    color: white;
+    border: 2px solid white;
+    background-color: brown;
+    font-size: 1.5rem;
+    padding: 8px;
+    margin: 14px 155px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#btn1:hover{
+    transform: translate(3px);
+}
+
+#btn2{
+    color: white;
+    border: 2px solid white;
+    background-color: brown;
+    font-size: 1.5rem;
+    padding: 8px;
+    margin: 14px 113px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#btn2:hover{
+    transform: translate(3px);
+}
+
+#services .box p{
+    font-family: 'Bree Serif',serif;
+}
+
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+    padding: 12px;
+}
+
+.btn{
+    color: white;
+    border: 2px solid white;
+    background-color: brown;
+    font-size: 1.5rem;
+    padding: 8px;
+    margin: 14px 61px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: translate(3px);
+}
+
+.center{
+    text-align: center;
+}
+</style>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="LetThemCook.html">
+                <img src="logo.jpg" alt="LetThemCook">
+            </a>
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#about">About</a></li>
+            <li class="item"><a href="Favorites">Favorites</a></li>
+            <li class="item"><a href="Top Recipes">Top Recipes</a></li>
+        </ul>
+        <div id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="search" id="bar" placeholder="Search your recipe">
+        </div>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary center">Let Them Cook</h1>
+        <p>"Let them cook" is a modern styled cookbook for a bunch of amateur homosapiens like you (that's why you visted our website haven't you :), who have never helped their moms or are rich enough to have chefs all around them or too studious to bother to learn cooking. If you fall into these above categories, then our website is your savoiur to learn and cook amazing meals . Wanna impress your loved ones ? want  people to respect you for your cooking ? want to hide your non-skillable life by cooking gourmet meals ? Don't worry we have it all here .........</p>
+    </section>
+
+    <section id="about">
+        <h1 class="h-primary center">Dessert</h1>
+        <div id="categories">
+            <div class="box">
+                <img src="dessert1.jpg" alt="logo1">
+                <h2 class="h-secondary center">Tiramisu</h2>
+                <a href="tiramisu.html" target="_blank">
+                    <button class="btn">View Recipe</button>
+                </a>
+            </div>
+            <div class="box">
+                <img src="dessert2.jpg" alt="logo2">
+                <h2 class="h-secondary center">Truffle</h2>
+                <a href="truffle.html" target="_blank">
+                    <button id="btn2">View Recipe</button>
+                </a>
+            </div>
+            <div class="box">
+                <img src="dessert3.jpg" alt="logo3">
+                <h2 class="h-secondary center">Gajar Ka Halwa</h2>
+                <a href="gajarkahalwa.html" target="_blank">
+                    <button id="btn1">View Recipe</button>
+                </a>
+            </div>
+            <div class="box">
+                <img src="dessert4.jpg" alt="logo4">
+                <h2 class="h-secondary center">Apple Pie</h2>
+                <a href="applepie.html" target="_blank">
+                    <button id="btn1">View Recipe</button>
+                </a>
+            </div>
+            <div class="box">
+                <img src="dessert5.jpg" alt="logo5">
+                <h2 class="h-secondary center">Cheesecake</h2>
+                <a href="cheesecake.html" target="_blank">
+                    <button id="btn1">View Recipe</button>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

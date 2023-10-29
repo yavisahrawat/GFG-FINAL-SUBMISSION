@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dabeli</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(160, 251, 184);
+        }
+
+        #header {
+            border-bottom-color: black;
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+        }
+
+        #header::before {
+            content: "";
+
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            height: 76%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #header h1 {
+            color: black;
+            text-align: center;
+            width: 100%;
+            font-family: 'Bree Serif', serif;
+        }
+
+        #logo {
+            margin: 4px 10px;
+        }
+
+        #logo img {
+            height: 90px;
+            margin: 7px 10px;
+            border-radius: 23px;
+        }
+
+        #search {
+            display: flex;
+            justify-content: right;
+            border-radius: 15px;
+            padding: 0.7rem;
+            width: auto;
+        }
+
+        #bar {
+            padding: 0.7rem;
+            border-radius: 15px;
+            width: 100%;
+        }
+
+        hr {
+            color: black;
+        }
+
+        #img {
+            display: flex;
+            justify-content: center;
+        }
+
+        #img .image {
+            height: 500px;
+            margin: 7px 10px;
+            border-radius: 25px;
+        }
+
+        #ingredients {
+            display: flex;
+        }
+
+        #ingredients .ingredient {
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .ingredient ul li {
+            font-size: 24px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .ingredient ul p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #instructions{
+            display: flex;
+        }
+
+        #instructions .steps{
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .steps ul li{
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            list-style: number;
+        }
+
+        .h-primary {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 4rem;
+            padding: 12px;
+        }
+
+        .h-secondary {
+            font-family: 'Bree Serif', serif;
+            font-size: 1.5rem;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="header">
+        <div id="logo">
+            <a href="LetThemCook.html">
+                <img src="logo.jpg" alt="LetThemCook">
+            </a>
+        </div>
+        <h1 class="h-primary center">Dabelli</h1>
+        <div id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="search" id="bar" placeholder="Search your recipe">
+        </div>
+    </nav>
+    <hr>
+    <div id="img">
+        <img class="image" src="veg4.jpg" alt="homemade-tiramisu-2">
+    </div>
+    <section id="ingredients">
+        <div class="ingredient">
+            <h2 class="h-secondary">Ingredients for the Potato Fillings</h2>
+            <ul>
+                <li>
+                    4 medium-sized boiled potatoes, peeled and mashed
+                </li>
+                <li>
+                    2 tablespoons oil
+                </li>
+                <li>
+                    1 teaspoon mustard seeds
+                </li>
+                <li>
+                    2 tomatoes, finely chopped
+                </li>
+                <li>
+                    1/4 teaspoon asafoetida (hing)
+                </li>
+                <li>
+                    8-10 curry leaves
+                </li>
+                <li>
+                    1 small onion, finely chopped
+                </li>
+                <li>
+                    1/4 cup roasted peanuts
+                </li>
+                <li>1/4 cup fresh pomegranate seeds
+
+                </li>
+                <li>2 tablespoons Dabeli masala
+
+                </li>
+                <li>Salt to taste
+
+                </li>
+                <li>2 tablespoons tamarind-date chutney
+
+                </li>
+                <li>2 tablespoons coriander leaves, finely chopped
+
+                </li>
+                <li>Water as needed
+
+                </li>
+            </ul>
+            <h2 class="h-secondary">For Assembling the Dabelli</h2>
+            <ul>
+                <li>
+                    8 Dabeli buns or pav
+                </li>
+                <li>
+                    Tamarind-date chutney
+                </li>
+                <li>
+                    Green chutney
+                </li>
+                <li>
+                    Sev (crispy fried gram flour vermicelli)
+                </li>
+                <li>
+                    Pomegranate seeds
+                </li>
+                <li>
+                    Finely chopped onions
+                </li>
+                <li>
+                    Finely chopped coriander leaves
+                </li>
+                <li>
+                    Butter for toasting the buns
+                </li>
+            </ul>
+            <div class="ingredient">
+                <h2 class="h-secondary">Estimated cost</h2>
+                <ul>
+                    <p>
+                        "IF YOU HAVE ALL THESE INGREDIENTS THEN YOU HAVE NO IMPENDING CURSE
+                        OF HAVING TO SPEND YOUR MONEY :0, ELSE YOU HAVE TO SPEND : ["
+                    </p>
+                    <li>
+                        The Estimated Budget would be :- 200-350 rupees
+                    </li>
+                </ul>
+            </div>
+    </section>
+
+    <section id="instructions">
+        <div class="steps">
+            <h2 class="h-secondary">Instructions to follow</h2>
+            <ul>
+                <li>Heat oil in a pan. Add mustard seeds, and when they crackle, add asafoetida and curry leaves.
+
+                </li>
+                <li>Saute the chopped onions until they turn translucent.
+
+                </li>
+                <li>Add the mashed potatoes, Dabeli masala, salt, and a little water. Mix well and cook for 2-3 minutes.
+
+                </li>
+                <li> Add roasted peanuts, pomegranate seeds, tamarind-date chutney, and chopped coriander leaves. Mix everything thoroughly and    cook for another 2 minutes. The potato filling is ready.
+
+                </li>
+                <li>Slice the Dabeli buns or pav horizontally without cutting them all the way through.
+
+                </li>
+                <li> Apply tamarind-date chutney on one side and green chutney on the other side of the buns.
+
+                </li>
+                <li>Stuff the prepared potato filling inside the buns.
+
+                </li>
+                <li>Heat a pan or griddle and spread some butter on it. Toast the stuffed buns on both sides until they turn light golden and    crispy.
+
+                </li>
+                <li>Once done, remove from the heat and garnish with sev, pomegranate seeds, finely chopped onions, and coriander leaves.
+
+                </li>
+                <li>Serve hot with extra chutneys and garnishes on the side.
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

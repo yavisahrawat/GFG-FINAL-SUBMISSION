@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egg Plant Parmesan</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(160, 251, 184);
+        }
+
+        #header {
+            border-bottom-color: black;
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+        }
+
+        #header::before {
+            content: "";
+
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            height: 76%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #header h1 {
+            color: black;
+            text-align: center;
+            width: 100%;
+            font-family: 'Bree Serif', serif;
+        }
+
+        #logo {
+            margin: 4px 10px;
+        }
+
+        #logo img {
+            height: 90px;
+            margin: 7px 10px;
+            border-radius: 23px;
+        }
+
+        #search {
+            display: flex;
+            justify-content: right;
+            border-radius: 15px;
+            padding: 0.7rem;
+            width: auto;
+        }
+
+        #bar {
+            padding: 0.7rem;
+            border-radius: 15px;
+            width: 100%;
+        }
+
+        hr {
+            color: black;
+        }
+
+        #img {
+            display: flex;
+            justify-content: center;
+        }
+
+        #img .image {
+            height: 500px;
+            margin: 7px 10px;
+            border-radius: 25px;
+        }
+
+        #ingredients {
+            display: flex;
+        }
+
+        #ingredients .ingredient {
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .ingredient ul li {
+            font-size: 24px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .ingredient ul p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #instructions {
+            display: flex;
+        }
+
+        #instructions .steps {
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .steps ul li {
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            list-style: number;
+        }
+
+        .h-primary {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 4rem;
+            padding: 12px;
+        }
+
+        .h-secondary {
+            font-family: 'Bree Serif', serif;
+            font-size: 1.5rem;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="header">
+        <div id="logo">
+            <a href="LetThemCook.html">
+                <img src="logo.jpg" alt="LetThemCook">
+            </a>
+        </div>
+        <h1 class="h-primary center">Eggplant Parmesan</h1>
+        <div id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="search" id="bar" placeholder="Search your recipe">
+        </div>
+    </nav>
+    <hr>
+    <div id="img">
+        <img class="image" src="veg2.jpg" alt="homemade-tiramisu-2">
+    </div>
+    <section id="ingredients">
+        <div class="ingredient">
+            <h2 class="h-secondary">Ingredients</h2>
+            <ul>
+                <li>
+                    2 large eggplants, sliced into 1/2-inch rounds
+                </li>
+                <li>
+                    Salt, for sweating the eggplant
+                </li>
+                <li>
+                    2 cups all-purpose flour
+                </li>
+                <li>
+                    4 large eggs, beaten
+                </li>
+                <li>
+                    2 cups breadcrumbs
+                </li>
+                <li>
+                    1 cup freshly grated Parmesan cheese
+                </li>
+                <li>
+                    4 cups marinara sauce
+                </li>
+                <li>
+                    1 pound fresh mozzarella, thinly sliced
+                </li>
+                <li>
+                    Fresh basil leaves, for garnish
+
+
+                </li>
+                <li>Olive oil, for frying
+
+
+
+                </li>
+            </ul>
+            <div class="ingredient">
+                <h2 class="h-secondary">Estimated cost</h2>
+                <ul>
+                    <p>
+                        "IF YOU HAVE ALL THESE INGREDIENTS THEN YOU HAVE NO IMPENDING CURSE
+                        OF HAVING TO SPEND YOUR MONEY :0, ELSE YOU HAVE TO SPEND : ["
+                    </p>
+                    <li>
+                        The Estimated Budget would be :- 200-350 rupees
+                    </li>
+                </ul>
+            </div>
+    </section>
+
+    <section id="instructions">
+        <div class="steps">
+            <h2 class="h-secondary">Instructions to follow</h2>
+            <ul>
+                <li> Sprinkle the eggplant slices with salt and let them sit for 30 minutes to draw out the bitterness. Rinse and pat dry with paper towels.
+
+
+
+                </li>
+                <li> Set up a breading station with three shallow dishes: one with flour, one with beaten eggs, and one with a mixture of breadcrumbs and Parmesan cheese.
+
+
+
+                </li>
+                <li>  Dredge the eggplant slices in the flour, then dip them in the egg, and coat them with the breadcrumb mixture.
+
+
+
+                </li>
+                <li> Heat olive oil in a large skillet over medium heat. Fry the breaded eggplant slices until golden brown on both sides. Drain on paper towels.
+
+
+
+                </li>
+                <li>  Preheat the oven to 375°F (190°C). In a baking dish, spread a thin layer of marinara sauce, then arrange a layer of fried eggplant slices. Top with more sauce, followed    by slices of fresh mozzarella. Repeat the layers, finishing with a final layer of marinara and mozzarella on top.
+
+
+
+                </li>
+                <li>Bake for 25-30 minutes, or until the cheese is bubbly and golden.
+
+
+
+                </li>
+                <li>Garnish with fresh basil leaves before serving.
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>

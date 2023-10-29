@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(160, 251, 184);
+        }
+
+        #header {
+            border-bottom-color: black;
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+        }
+
+        #header::before {
+            content: "";
+
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            height: 76%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #header h1 {
+            color: black;
+            text-align: center;
+            width: 100%;
+            font-family: 'Bree Serif', serif;
+        }
+
+        #logo {
+            margin: 4px 10px;
+        }
+
+        #logo img {
+            height: 90px;
+            margin: 7px 10px;
+            border-radius: 23px;
+        }
+
+        #search {
+            display: flex;
+            justify-content: right;
+            border-radius: 15px;
+            padding: 0.7rem;
+            width: auto;
+        }
+
+        #bar {
+            padding: 0.7rem;
+            border-radius: 15px;
+            width: 100%;
+        }
+
+        hr {
+            color: black;
+        }
+
+        #img {
+            display: flex;
+            justify-content: center;
+        }
+
+        #img .image {
+            height: 500px;
+            margin: 7px 10px;
+            border-radius: 25px;
+        }
+
+        #ingredients {
+            display: flex;
+        }
+
+        #ingredients .ingredient {
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .ingredient ul li {
+            font-size: 24px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .ingredient ul p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #instructions{
+            display: flex;
+        }
+
+        #instructions .steps{
+            border: 2px solid black;
+            border-radius: 28px;
+            padding: 34px;
+            margin: 2px 55px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        .steps ul li{
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            list-style: number;
+        }
+
+        .h-primary {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 4rem;
+            padding: 12px;
+        }
+
+        .h-secondary {
+            font-family: 'Bree Serif', serif;
+            font-size: 1.5rem;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="header">
+        <div id="logo">
+            <a href="LetThemCook.html">
+                <img src="logo.jpg" alt="LetThemCook">
+            </a>
+        </div>
+        <h1 class="h-primary center">Spring Roll</h1>
+        <div id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="search" id="bar" placeholder="Search your recipe">
+        </div>
+    </nav>
+    <hr>
+    <div id="img">
+        <img class="image" src="veg6.jpg" alt="homemade-tiramisu-2">
+    </div>
+    <section id="ingredients">
+        <div class="ingredient">
+            <h2 class="h-secondary">Ingredients</h2>
+            <ul>
+                <li>
+                    sesame oil 2 tbsp
+                </li>
+                <li>
+                    shredded cabbage 2 cups
+                </li>
+                <li>
+                    small carrots shredded 2 nos
+                </li>
+                <li>
+                    thinly sliced green bell pepper 1/3 cups
+                </li>
+                <li>
+                    Spring Onions Whites 1/3 cups
+                </li>
+                <li>
+                    Crushed Black Pepper 1/2 tsp
+                </li>
+                <li>
+                    Soy Sauce 1 tbsp
+                </li>
+                <li>
+                    Cooked Noodles 1 cups
+                </li>
+                <li>
+                    Bean Sprouts 3 tbsp
+                    
+                    
+                </li>
+                <li>Chopped Spring Onion Greens 2-3 tbsp
+
+
+                </li>
+                <li>Salt to taste 1 tsp
+
+
+                </li>
+                <li>oil for deep frying 6-7 tbsp
+
+
+                </li>
+                <li>all purpose flour(maida) or corn starch 6 tbsp
+
+
+                </li>
+                <li>water or add as required to make a thick paste 4-5 tbsp
+
+
+                </li>
+                <li>
+                    spring roll wrappers 24-30 nos
+
+
+                </li>
+            </ul>
+            <div class="ingredient">
+                <h2 class="h-secondary">Estimated cost</h2>
+                <ul>
+                    <p>
+                        "IF YOU HAVE ALL THESE INGREDIENTS THEN YOU HAVE NO IMPENDING CURSE
+                        OF HAVING TO SPEND YOUR MONEY :0, ELSE YOU HAVE TO SPEND : ["
+                    </p>
+                    <li>
+                        The Estimated Budget would be :- 200-350 rupees
+                    </li>
+                </ul>
+            </div>
+    </section>
+
+    <section id="instructions">
+        <div class="steps">
+            <h2 class="h-secondary">Instructions to follow</h2>
+            <ul>
+                <li> chop the veggies in thin long strips.
+
+                </li>
+                <li>you can use your choice of veggies
+
+                </li>
+                <li>now heat 2 tbsp sesame oil in a wok or kadai. keep the flame on medium intensity and add 1/3 cup spring onion whites.
+
+
+                </li>
+                <li>stir and then add all the veggies.
+
+
+                </li>
+                <li> increase the flame to high and stir fry the veggies for 4 to 5 minutes on a high flame.
+
+
+
+                </li>
+                <li>then add 1/2 tsp crushed black pepper powder and 1 tsp finely chopped celery (optional).
+
+
+                </li>
+                <li>add 1 tbsp soy sauce. both black pepper and soy sauce can be adjusted as per your taste.
+
+                </li>
+                <li>stir everything very well
+
+
+                </li>
+                <li>then add the cooked noodles
+
+
+                </li>
+                <li>season with salt. add less salt as soy sauce already has salt.
+
+
+                </li>
+                <li>stir again very well. the filling has to be dry.
+
+
+                </li>
+                <li>switch off the flame and add the spring onion greens.
+                </li>
+                <li>
+                    stir and keep the filling aside. let it cool down.
+
+                </li>
+                <li>
+                    In a bowl, mix 6 tbsp all purpose flour or corn starch and 4 to 5 tbsp water. i used all purpose flour.stir very well to make a thick paste without any lumps
+
+                </li>
+                <li>
+                    now take the spring roll wrapper. if you are using the wrapper recipe which i have posted, then keep the cooked side facing you. make sure that the wrappers are at room temperature before using them.
+
+                </li>
+                <li>
+                    now with your fingertip, apply the paste on the edges of the wrapper. then place 1 tbsp of the veggie stuffing on one side
+
+                </li>
+                <li>
+                    gently but tightly roll till the end.
+
+                </li>
+                <li>
+                    seal the end part to the roll and place the roll with the sealed side downwards.
+
+                </li>
+                <li>
+                    now spread some of the paste on the sides.bring one side touching the roll and press gently.
+
+                </li>
+                <li>
+                    do the same with the other side. again spread the batter on both the closed edges.
+
+                </li>
+                <li>
+                    heat oil at the deep frying temperature
+
+                </li>
+                <li>
+                    you can fry 2 to 3 veg spring rolls at a time
+
+                </li>
+                <li>
+                    once they become light golden, turn them over and fry the other side
+
+                </li>
+                <li>
+                    drain fried veg spring roll on kitchen paper towels to remove excess oil.
+
+
+                </li>
+                <li>
+                    serve vegetable spring roll hot with red chili sauce or tomato ketchup and chutney
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

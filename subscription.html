@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscriptions</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    #navbar {
+        display: flex;
+        align-items: center;
+        top: 0px;
+    }
+
+    #logo {
+        margin: 4px 10px;
+    }
+
+    #logo img {
+        height: 59px;
+        margin: 7px 10px;
+        border-radius: 24px;
+    }
+    
+    #container {
+        margin: 34px;
+        display: flex;
+    }
+
+    #container h1 {
+        color: black;
+        width: 100%;
+        font-size: 3.5rem;
+        text-align: center;
+        font-family: 'Bree Serif', serif;
+    }
+    
+    #container .box {
+        border: 2px solid black;
+        border-radius: 28px;
+        padding: 34px;
+        margin: 2px 55px;
+        background-color: antiquewhite;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    #container .box1 {
+        border: 2px solid black;
+        border-radius: 28px;
+        padding: 34px;
+        margin: 2px 55px;
+        background-color: antiquewhite;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    #container .box ul li{
+        font-size: 1rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .btn {
+        color: white;
+        border: 2px solid white;
+        background-color: brown;
+        font-size: 1.5rem;
+        padding: 8px;
+        margin: 14px 61px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .h-primary {
+        font-family: 'Bree Serif', serif;
+        font-size: 3rem;
+        padding: 12px;
+    }
+
+    .h-secondary {
+        font-family: 'Bree Serif', serif;
+        font-size: 1.5rem;
+        padding: 12px;
+    }
+
+    .center {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="LetThemCook.html">
+                <img src="logo.jpg" alt="LetThemCook">
+            </a>
+        </div>
+        <h1 class="h-primary">Let Them Cook</h1>
+    </nav>
+    <hr>
+
+    <section id="container">
+        <h1 id="h-primary center">Choose your Plan</h1>
+        <div class="box">
+            <h2 class="h-secondary center">Chef's Premium Pack</h2>
+            <button class="btn">Premium</button>
+            <ul>
+                <li>₹150/month and ₹1500/year</li>
+                <li>Can add your own recipe into our website</li>
+                <li>Chef's might also be rewarded with vouchers on getting positive reviews on their creations</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2 class="h-secondary center">Philosophical Premium Pack</h2>
+            <button class="btn">Premium</button>
+            <ul>
+                <li>₹100/month and ₹750/year</li>
+                <li>Can review to unlimited recipes</li>
+                <li>Has the access to all the recipes present in our website</li>
+                <li>Can manage his or her own's favorite page</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2 class="h-secondary center">Basic Pack</h2>
+            <a href="LetThemCook.html">
+                <button class="btn">Home</button>
+            </a>
+            <ul>
+                <li>Free access</li>
+                <li>Have only Access to limited recipes</li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
